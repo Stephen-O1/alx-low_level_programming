@@ -1,5 +1,9 @@
 #include <stdio.h>
-/*Introduce the main function*/
+/**
+ *
+ *Introduce the main function
+ *Print Programming is goood
+ */
 int main(void)
 /*The main function will use puts*/
 {
