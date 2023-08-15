@@ -9,5 +9,10 @@
  * On error, -1 is returned, and error is set appropriately.
  */
 
+/**
+ * print_alphabet - print lowercase alphabet
+ */
+
+void print_alphabet(void);
 
 #endif
