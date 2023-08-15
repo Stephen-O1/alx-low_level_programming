@@ -48,6 +48,14 @@ int _isalpha(int c);
 int print_sign(int n);
 
 /**
+ * _abs - computer absolute value of integer
+ * @int: integer
+ * Return: absolute value
+ */
+
+int _abs(int);
+
+/**
  * print_last_digit - print last digit of integer
  * @int: integer
  * Return: last digit of number
