@@ -29,5 +29,11 @@ void print_alphabet_x10(void);
 
 int _islower(int c);
 
+/**
+ * print_to_98 - print numbers n to 98
+ * @n: integer argument
+ */
+
+void print_to_98(int n);
 
 #endif
