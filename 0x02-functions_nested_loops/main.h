@@ -29,6 +29,14 @@ void print_alphabet_x10(void);
 
 int _islower(int c);
 /**
+ * print_last_digit - print last digit of integer
+ * @int: integer
+ * Return: last digit of number
+ */
+
+int print_last_digit(int);
+
+/**
  * jack_bauer - print every minute of a day
  * Description: print minutes 00:00 to 23:59
  */
