@@ -30,6 +30,15 @@ void print_alphabet_x10(void);
 int _islower(int c);
 
 /**
+ * add - add two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: sum
+ */
+
+int add(int a, int b);
+
+/**
  * print_to_98 - print numbers n to 98
  * @n: integer argument
  */
