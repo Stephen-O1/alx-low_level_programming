@@ -30,6 +30,12 @@ void print_alphabet_x10(void);
 int _islower(int c);
 
 /**
+ * times_table - print multiplication table
+ */
+
+void times_table(void);
+
+/**
  * add - add two integers
  * @a: first integer
  * @b: second integer
