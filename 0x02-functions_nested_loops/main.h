@@ -28,6 +28,12 @@ void print_alphabet_x10(void);
  */
 
 int _islower(int c);
+/**
+ * jack_bauer - print every minute of a day
+ * Description: print minutes 00:00 to 23:59
+ */
+
+void jack_bauer(void);
 
 /**
  * times_table - print multiplication table
