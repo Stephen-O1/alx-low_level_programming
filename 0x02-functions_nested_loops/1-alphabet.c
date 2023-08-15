@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,8 +14,9 @@ alpha = 'a';
 
 while (alpha <= 'z')
 {
-_putchar(alpha);
+putchar(alpha);
 alpha++;
 }
-_putchar('\n');
+putchar('\n');
+return(0);
 }
