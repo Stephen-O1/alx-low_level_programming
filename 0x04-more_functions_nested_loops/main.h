@@ -24,5 +24,13 @@ int _isupper(int c);
 
 int _isdigit(int c);
 
+/**
+ *mul.c - multiplication of two integers
+ *@a: integer 1
+ *@b: integer 2
+ *Return product of the two integer. 
+ */
+
+int mul(int a, int b);
 
 #endif
