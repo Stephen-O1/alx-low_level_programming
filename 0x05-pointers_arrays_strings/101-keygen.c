@@ -2,38 +2,44 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define PASSWORD_LENGTH 10
-
 /**
- *Writing a program that print random passwords
- *Defining the random paasword function
- */
-
-void generateRandomPassword(char *password, int length)
+  * main - generates valid passwords for the program.
+  * 
+  * Return: always 0.
+  */
+int main(void)
 {
-const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-size_t charset_length = sizeof(charset) - 1;
+char s[64];
+int i, n, tmp, sum;
+time_t t;
 
-int i;
-/* Move the declaration outside the loop*/
- 
-for (i = 0; i < length; i++)
+srand((unsigned) time(&t));
+sum = 0;
+n = 0xad4;
+i = 0;
+while (i < 64)
 {
-password[i] = charset[rand() % charset_length];
+if (n - sum > 126)
+tmp = rand() % 83 + 44;
+else if (n - sum < 126 && n - sum > 44)
+{
+tmp = n - sum;
+*(s + i) = tmp;
+*(s + i + 1) = '\0';
+break;
 }
-password[length] = '\0';
-}
-
-int main()
+else
 {
-srand(time(NULL));
-
-int passwordLength = PASSWORD_LENGTH;
-char password[PASSWORD_LENGTH + 1];
-
-generateRandomPassword(password, passwordLength);
-
-printf("Generated Password: %s\n", password);
-
-return 0;
+i = 0;
+sum = 0;
+continue;
+}
+sum = sum + tmp;
+*(s + i) = tmp;
+*(s + i + 1) = '\0';
+i++;
+}
+printf("%s", s);
+return (0);
+	
 }
