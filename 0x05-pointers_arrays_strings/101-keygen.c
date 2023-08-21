@@ -19,7 +19,8 @@ return charset[index];
 
 void generateRandomPassword(char *password, int length)
 {
-for (int i = 0; i < length; i++) {
+for (int i = 0; i < length; i++)
+{
 password[i] = getRandomChar();
 }
 password[length] = '\0';
