@@ -2,26 +2,18 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define PASSWORD_LENGTH 10
 /**
- * Function to generate a random character from a given set
+ *Writing a program that generates password randomly
  */
-
-char getRandomChar()
-{
-const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-int index = rand() % (sizeof(charset) - 1);
-return charset[index];
-}
-
-/**
- *Function to generate a random password of a given length
- */
-
 void generateRandomPassword(char *password, int length)
 {
+const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+size_t charset_length = sizeof(charset) - 1;
+
 for (int i = 0; i < length; i++)
 {
-password[i] = getRandomChar();
+password[i] = charset[rand() % charset_length];
 }
 password[length] = '\0';
 }
@@ -29,15 +21,10 @@ password[length] = '\0';
 int main()
 {
 srand(time(NULL));
-/* Seed the random number generator with current time*/
-
-int passwordLength = 10;
-/* Change this to the desired password length */
-
-char password[passwordLength + 1];
-
+int passwordLength = PASSWORD_LENGTH;
+char password[PASSWORD_LENGTH + 1];
 generateRandomPassword(password, passwordLength);
 printf("Generated Password: %s\n", password);
-
+    
 return 0;
 }
