@@ -104,5 +104,12 @@ void print_number(int n);
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
- 
+
+/**
+ * print_buffer - Print the entire buffer w/ certain conditions
+ * @b: The buffer to print
+ * @size: The size of the buffer
+ */
+void print_buffer(char *b, int size)
+
 #endif
