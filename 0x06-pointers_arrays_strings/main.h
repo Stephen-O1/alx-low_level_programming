@@ -93,4 +93,16 @@ char *leet(char *s);
 
 void print_number(int n);
 
+/**
+ * infinite_add - Add up two numbers stored in given char arrays
+ * @n1: The first number
+ * @n2: The second number
+ * @r: Pointer to the buffer to store result
+ * @size_r: The size of the buffer
+ *
+ * Return: 0 if buffer too small to store result, else return pointer to buffer
+ */
+
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
+ 
 #endif
