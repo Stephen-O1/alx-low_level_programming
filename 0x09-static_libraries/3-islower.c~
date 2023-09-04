@@ -1,0 +1,11 @@
+#include "main.h"
+/**
+ *implementation _islower function
+ */
+
+int _islower(char c)
+{
+
+return write(1, &c, 1);
+  
+}

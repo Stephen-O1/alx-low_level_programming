@@ -1,0 +1,29 @@
+#include "main.h"
+#include <stddef.h>
+
+/**
+ *Implementation for _strstr funtion
+ */
+
+char *_strstr(const char *haystack, const char *needle) 
+{
+while (*haystack != '\0') 
+{
+const char *h = haystack;
+const char *n = needle;
+
+while (*n != '\0' && *h == *n) 
+{
+h++;
+n++;
+}
+
+if (*n == '\0') 
+{
+return (char *)haystack;
+}
+
+haystack++;
+}
+return NULL;
+}
