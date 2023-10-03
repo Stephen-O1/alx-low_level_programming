@@ -14,8 +14,7 @@
 #include <stdlib.h>
 
 
-
-EMACS 
+ 
 /**
 
  * check_elf - Checks if a file is an ELF file.
